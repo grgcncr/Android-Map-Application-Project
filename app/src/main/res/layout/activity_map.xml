@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+  <org.osmdroid.views.MapView
+      android:id="@+id/mapView"
+      tilesource="MAPNIK"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+  <Button
+      android:id="@+id/cancelButton"
+      android:layout_width="126dp"
+      android:layout_height="62dp"
+      android:layout_below="@id/mapView"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="228dp"
+      android:layout_marginTop="630dp"
+      android:text="Cancel"
+      android:backgroundTint="@android:color/holo_red_dark"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
+  <Button
+      android:id="@+id/startButton"
+      android:layout_width="126dp"
+      android:layout_height="62dp"
+      android:layout_below="@id/mapView"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="48dp"
+      android:layout_marginTop="630dp"
+      android:text="Start"
+      android:backgroundTint="@android:color/holo_green_light"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
+
+</FrameLayout>
